@@ -1,0 +1,118 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.header {
+    display: flex;
+    height: 26px;
+    width: 100%;
+    justify-content: space-between;
+    -webkit-box-shadow: 2px 6px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 6px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 6px 5px 0px rgba(0,0,0,0.75);
+    line-height: 20px;
+}
+.left{
+    margin: 3px;
+    padding: 5px 10px;
+}
+.left img{
+    width: 12px;
+    height: 12px;
+}
+.left {
+    display: flex;
+}
+
+.mid {
+    display: flex;
+    justify-content: space-between;
+}
+.x:hover {
+    background: antiquewhite;
+    border-radius: 5px;
+}
+.x{
+    margin: 2px;
+    padding: 5px 15px;
+}
+.x img {
+    display: flex;
+    width:  12px ;
+    height: 12px;
+
+}
+.right{
+    display: flex;
+}
+.right-img{
+    margin: 2px;
+    padding: 0 3px;
+    background: beige;
+    border-radius: 5px;
+}
+.right-img:hover{
+    background: bisque;
+    border-radius: 5px;
+}
+.right-img img {
+    width: 12px;
+    height: 12px;
+}
+.body{
+    display: flex;
+    float: left;
+    width: 33.33%;
+}
+.leftBody{
+    background: gray;
+    height: 200px;
+    width: 100px;
+}
+.leftBody img{
+    height: 200px;
+    width: 100px;
+}
+.rightBody{
+    background: bisque;
+    height: 200px;
+    width: 100px;
+}
+.rightBody img{
+    height: 200px;
+    width: 100px;
+}
+.midBody{
+    background: beige;
+    height: 200px;
+    width: 100px;
+}
+.midBody img{
+    height: 200px;
+    width: 100px;
+}
+.leftMainBody{
+    background: aliceblue;
+    height: 350px;
+    width: 33.20%;
+    border: 1px solid gray;
+    float: left;
+}
+.rightMainBody{
+    background: beige;
+    height: 350px;
+    width: 33%;
+    border: 1px solid gray;
+    float: left;
+}
+@media only screen and (max-width: 500px) {
+    .leftMainBody {
+        display: none;
+    }
+    .body{
+        width: 100%;
+    }
+    .rightMainBody{
+        display: none;
+    }
+}

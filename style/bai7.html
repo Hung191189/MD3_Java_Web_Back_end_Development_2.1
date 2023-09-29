@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation: x 10s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes x {
+            0% {
+                background: red;
+                margin: 0;
+            }
+            25% {
+                background: blue;
+                margin-top: 0;
+                margin-left: calc(100% - 100px);
+                border-radius: 50%;
+            }
+            50% {
+                background: yellow;
+                margin-top: calc(100vh - 100px);
+                margin-left: calc(100% - 100px);
+            }
+            75% {
+                margin-top: calc(100vh - 100px);
+                margin-left: 0;
+            }
+            100% {
+                background: pink;
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="box"></div>
+</body>
+</html>
